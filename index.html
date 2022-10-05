@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="iphone">
+        <textarea id="res">0</textarea>
+        <div id="teclado">
+            <table>
+                <tr>
+                    <td><button class="reset" id="limpar" onclick="limparCalculo()">AC</button></td>
+                    <td><button class="reset" onclick="insert('-')">+/-</button></td>
+                    <td><button class="reset" onclick="sinal('%')">&percnt;</button></td>
+                    <td><button class="operador" onclick="sinal('/')">&div;</button></td>
+                </tr>
+                <tr>
+                    <td><button class="numero" onclick="insert(7)">7</button></td>
+                    <td><button class="numero" onclick="insert(8)">8</button></td>
+                    <td><button class="numero" onclick="insert(9)">9</button></td>
+                    <td><button class="operador" onclick="sinal('*')">&times;</button></td>
+                </tr>
+                <tr>
+                    <td><button class="numero" onclick="insert(4)">4</button></td>
+                    <td><button class="numero" onclick="insert(5)">5</button></td>
+                    <td><button class="numero" onclick="insert(6)">6</button></td>
+                    <td><button class="operador" onclick="sinal('-')">&minus;</button></td>
+                </tr>
+                <tr>
+                    <td><button class="numero" onclick="insert(1)">1</button></td>
+                    <td><button class="numero" onclick="insert(2)">2</button></td>
+                    <td><button class="numero" onclick="insert(3)">3</button></td>
+                    <td><button class="operador" onclick="sinal('+')">&plus;</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="numero" id="zero" onclick="insert(0)">0</button></td>
+                    <td><button class="numero" onclick="insert('.')">,</button></td>
+                    <td><button class="operador" onclick="calcular()">&equals;</button></td>
+                </tr>
+            </table>
+        </div>   
+    </section>
+    <footer>
+        <i class="fa-brands fa-apple"></i>
+    </footer>
+<script src="https://kit.fontawesome.com/5485303d04.js" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>

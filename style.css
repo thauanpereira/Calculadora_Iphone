@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: black;
+}
+
+section#iphone {
+    width: 230px;
+    height: 450px; 
+    padding: 10px;
+    border-radius: 25px;
+    background-color: black;
+    box-shadow: 0 0 15px white;
+    display: flex;
+    flex-direction: column;  
+}
+
+#res {
+    height:40px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    border: none;
+    resize: none;
+    padding: 5px;
+    margin-top: 130px;
+    text-align: end;
+    overflow: hidden;
+}
+
+div#teclado table {
+    border-spacing: 2px;
+}
+
+button {
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button.reset {
+    background-color: #A5A5A5;
+}
+
+td > button.reset:hover {
+    background-color: #c0c0c0;
+}
+
+button.operador {
+    background-color: #FF9F0A;
+    color: white;
+    font-size: 25px;
+}
+
+td > button.operador:hover {
+    background-color: #fcb03f;
+}
+
+button.numero {
+    background-color: #343434;
+    color: white;
+}
+
+td > button.numero:hover {
+    background-color: #4d4d4d;
+}
+
+button#zero {
+    width: 100px;
+    text-align: left;
+    padding: 20px;
+}
+
+footer > i {
+    margin-top: 50px;
+    font-size: 50px;
+    color: rgb(49, 49, 49);
+    filter: drop-shadow(0 0 2px white);
+}
+
